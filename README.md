@@ -1,5 +1,5 @@
 ##############################################
-# ArchLinux Fast Install BIOS
+# ArchLinux Fast Install BIOS VM
 ##############################################
 
 # Описание
@@ -14,12 +14,12 @@ Cостоит из 3 частей.
 2) Скачать и запустить скрипт командой:
 
    ```bash 
-   wget git.io/my_arch_legacy1.sh && sh my_arch_legacy1.sh
+   wget git.io/my_arch_vm1.sh && sh my_arch_vm1.sh
    ```
    или
    
    ```bash
-   curl -OL git.io/my_arch_legacy1.sh && sh my_arch_legacy1.sh
+   curl -OL git.io/my_arch_vm1.sh && sh my_arch_vm1.sh
    ```
    
    Запустится установка минимальной системы.
@@ -34,7 +34,7 @@ Cостоит из 3 частей.
    Установка 3-й части производится из терминала командой:
    
    ```bash 
-   wget git.io/my_arch_legacy3.sh && sh my_arch_legacy3.sh
+   wget git.io/my_arch_vm3.sh && sh my_arch_vm3.sh
    ```
 
 # Настройка скрипта под себя
