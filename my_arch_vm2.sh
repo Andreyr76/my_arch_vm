@@ -61,6 +61,13 @@ pacman -S xorg xorg-server xorg-xinit xorg-xrandr
 #pacman -S lxdm --noconfirm
 #systemctl enable lxdm
 
+
+#echo "Ставим i3"
+#pacman -S i3-wm  i3status dmenu sakura xfce4-terminal ttf-font-awesome feh gvfs udiskie xorg-xbacklight tumbler picom jq --noconfirm
+
+#echo '.xinitrc'
+#echo 'exec i3' >> /home/andrey/.xinitrc
+
 echo 'Ставим шрифты'
 pacman -S ttf-liberation ttf-dejavu --noconfirm 
 
