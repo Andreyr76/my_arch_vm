@@ -25,11 +25,11 @@ echo '2.4 создание разделов'
   echo;
   echo +30G;
 
- # echo n;
- # echo;
- # echo;
- # echo;
- # echo +1024M;
+  echo n;
+  echo;
+  echo;
+  echo;
+  echo +1024M;
 
   echo n;
   echo p;
@@ -47,14 +47,14 @@ fdisk -l
 echo '2.4.2 Форматирование дисков'
 mkfs.ext2  /dev/vda1 -L boot
 mkfs.ext4  /dev/vda2 -L root
-# mkswap /dev/vda3 -L swap
+mkswap /dev/vda3 -L swap
 mkfs.ext4  /dev/vda4 -L home
 
 echo '2.4.3 Монтирование дисков'
 mount /dev/vda2 /mnt
 mkdir /mnt/{boot,home}
 mount /dev/vda1 /mnt/boot
-# swapon /dev/vda3
+swapon /dev/vda3
 mount /dev/vda4 /mnt/home
 
 echo '3.1 Выбор зеркал для загрузки. Ставим зеркало от Яндекс'
